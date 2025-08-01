@@ -25,7 +25,7 @@ darkmode.onclick = () => {
     document.body.classList.remove("active");
   }
 };
-//
+//  تفعيل المهارات عند التمرير (Skills Bar Animation)
 document.addEventListener('DOMContentLoaded', (event) => {	
 
 	var options = {
@@ -43,3 +43,51 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	var typed = new Typed('.typing', options);
   });
 	//
+window.addEventListener("scroll", function () {
+  const bars = document.querySelectorAll(".bars-box");
+  bars.forEach((bar) => {
+    const rect = bar.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      bar.classList.add("animate");
+    }
+  });
+});
+
+//  تفعيل "عرض المزيد" للمشاريع
+
+function loadMoreProjects() {
+  const container = document.querySelector(".services-content");
+
+  const moreProjects = [
+    {
+      title: "Digital Dashboard Design",
+      description: "Interactive dashboard to monitor system usage, designed using Power BI and UX wireframes.",
+      icon: "bx-bar-chart"
+    },
+    {
+      title: "Process Automation Proposal",
+      description: "Business analysis document suggesting automation of manual procedures within SFDA internal teams.",
+      icon: "bx-git-compare"
+    }
+  ];
+
+  moreProjects.forEach(project => {
+    const box = document.createElement("div");
+    box.className = "services-box";
+    box.innerHTML = `
+      <i class='bx ${project.icon}'></i>
+      <h3>${project.title}</h3>
+      <div class="project-info">
+        <p>${project.description}</p>
+      </div>
+    `;
+    container.appendChild(box);
+  });
+
+  // إزالة زر عرض المزيد بعد النقر
+  document.querySelector(".load-more").style.display = "none";
+}
+
+
+
+

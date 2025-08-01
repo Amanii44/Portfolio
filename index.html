@@ -1,71 +1,156 @@
-<!-- Home Section Start -->
-<section class="home" id="home">
-    <div class="social">
-        <a href="https://github.com/Amanii44"><i class='bx bxl-github'></i></a>
-        <a href="https://www.linkedin.com/in/amani-al-otaibi-a0516519a/"><i class='bx bxl-linkedin'></i></a>
-    </div>
-    <div class="home-img">
-        <img src="images/frontend.png" alt="">
-    </div>
-    <div class="home-text">
-        <span>Hello, I'm</span>
-        <h1>Mariam Al-Yousef</h1>
-        <h2><span class="typing"></span></h2>
-        <p>Digital Transformation Specialist trained at the Saudi Food and Drug Authority (SFDA), with a strong foundation in IT and business analysis. I translate processes into meaningful digital solutions, supported by hands-on experience in documenting SRS, BRD, and UX collaboration.</p>
-        <a href="Portfolio_Maryam_AlYousef_SFDA_WithLogo.docx" class="btn">Download Portfolio</a>
-    </div>
-</section>
-<!-- Home Section End -->
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- Portfolio Section Start -->
-<section class="services" id="portfolio">
-    <div class="heading">
-        <h2>Portfolio</h2>
-        <span>Recent Projects</span>
-    </div>
-    <div class="services-content">
-        <div class="services-box">
-            <i class='bx bx-file'></i>
-            <h3>Tiqath Improvements (High Priority)</h3>
-            <div class="project-info">
-              <p>SRS document for improving report and review interfaces for internal users.</p>
-            </div>
-        </div>
-        <div class="services-box">
-            <i class='bx bx-file'></i>
-            <h3>Tiqath Improvements (Low Priority)</h3>
-            <div class="project-info">
-              <p>Enhancements for user experience and interface efficiency without changing core features.</p>
-            </div>
-        </div>
-        <div class="services-box">
-            <i class='bx bx-file'></i>
-            <h3>Safe Use System Enhancements</h3>
-            <div class="project-info">
-              <p>SRS for enhancing the evaluation process of safe use for medical devices at healthcare providers.</p>
-            </div>
-        </div>
-    </div>
-    <div style="text-align:center;">
-      <div class="load-more" onclick="loadMoreProjects()">عرض المزيد</div>
-      <a class="btn" href="Portfolio_Maryam_AlYousef_SFDA_WithLogo.docx" download>📄 Download Full Portfolio</a>
-    </div>
-</section>
-<!-- Portfolio Section End -->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Amani</title>
 
-<!-- JavaScript Libraries -->
-<script src="js/typed.js"></script>
-<script src="js/script.js"></script>
-<script>
-  var typed = new Typed(".typing", {
-    strings: ["Business Analyst", "Digital Transformation Specialist", "IT Graduate"],
-    typeSpeed: 80,
-    backSpeed: 40,
-    backDelay: 1000,
-    startDelay: 500,
-    smartBackspace: true,
-    showCursor: true,
-    cursorChar: '|',
-    loop: true
-  });
-</script>
+    <!-- Main Stylesheets -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/Footer.css" />
+
+    <!-- Boxicons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+</head>
+
+<body>
+    <!-- Navbar  Section Start -->
+    <header>
+        <a href="index.html" class="logo">Amani</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div class="bx bx-moon" id="darkmode"></div>
+        </ul>
+    </header>
+    <!-- Navbar Section End -->
+
+    <!-- Home Section Start -->
+    <section class="home" id="home">
+        <div class="social">
+            <a href="https://github.com/Amanii44"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/amani-al-otaibi-a0516519a/"><i class='bx bxl-linkedin'></i></a>
+        </div>
+        <div class="home-img">
+            <img src="images/frontend.png" alt="" />
+        </div>
+        <div class="home-text">
+            <span>Hello, I'm</span>
+            <h1>Amani Matar</h1>
+            <h2><span class="typing"></span></h2>
+            <p>Certified in Business Analysis and Digital Transformation, passionate about improving systems and driving innovation in public service.</p>
+            <a href="AMANI_MATAR.pdf" class="btn">Download CV</a>
+        </div>
+    </section>
+    <!-- Home Section End -->
+
+    <!-- About Section Start -->
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+            <span>Introduction</span>
+        </div>
+
+        <div class="about-container">
+            <div class="about-img">
+                <img src="images/frontend.png" alt="" />
+            </div>
+            <div class="about-text">
+                <p>I'm an IT graduate with a passion for digital transformation. I completed training at SFDA as a Digital Transformation Specialist and hold certifications in AWS and Business Analysis. I have experience preparing professional documentation (SRS, BRD) and improving digital systems to align with national transformation goals.</p>
+                <div class="information">
+                    <div class="info-box">
+                        <i class='bx bxs-user'></i>
+                        <span>Amani Matar</span>
+                    </div>
+
+                    <div class="info-box">
+                        <i class='bx bxs-phone'></i>
+                        <span>+966 53 888 2027</span>
+                    </div>
+
+                    <div class="info-box">
+                        <i class='bx bxs-envelope'></i>
+                        <span>amatarotb@gmail.com</span>
+                    </div>
+                </div>
+                <a href="AMANI_MATAR.pdf" class="btn">Download CV</a>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Skills Section Start -->
+    <section class="skills" id="skills">
+        <div class="heading">
+            <h2>Skills</h2>
+            <span>Technical & Analytical</span>
+        </div>
+
+        <div class="skills-container">
+            <div class="bars">
+                <div class="bars-box">
+                    <h3>HTML</h3>
+                    <span>94%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar html-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>CSS</h3>
+                    <span>84%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar css-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>JavaScript</h3>
+                    <span>74%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar js-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>Business Analysis</h3>
+                    <span>85%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar ba-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>Cloud (AWS)</h3>
+                    <span>70%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar aws-bar"></div>
+                </div>
+            </div>
+            <div class="skills-img">
+                <img src="images/frontend.png" alt="Skill" />
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section End -->
+
+    <!-- JS for Typing Effect -->
+    <script>
+      var typed = new Typed(".typing", {
+        strings: ["Digital Transformation Specialist", "Business Analyst", "Frontend Developer"],
+        typeSpeed: 60,
+        backSpeed: 40,
+        loop: true
+      });
+    </script>
+
+    <!-- JavaScript files -->
+    <script src="js/script.js"></script>
+    <script src="js/typed.js"></script>
+</body>
+
+</html>

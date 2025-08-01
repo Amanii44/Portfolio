@@ -506,6 +506,7 @@
    }
  }
 
+
 /* جميع الاستايلات السابقة كما أرسلتها محفوظة */
 
 /* تحسين مظهر صناديق البورتفوليو */
@@ -515,6 +516,19 @@
   padding: 25px 15px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.08);
   transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  position: relative;
+}
+
+#portfolio .services-box .project-info {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+#portfolio .services-box:hover .project-info {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #portfolio .services-box:hover {
@@ -537,9 +551,63 @@
   font-size: 16px;
   border-radius: 6px;
   transition: background 0.3s ease;
+  display: inline-block;
 }
 
 #portfolio .btn:hover {
   background-color: var(--hover);
 }
+
+/* تخصيص زر عرض المزيد */
+#portfolio .load-more {
+  display: inline-block;
+  margin: 30px auto 10px;
+  background-color: #007acc;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+#portfolio .load-more:hover {
+  background-color: #005f99;
+}
+
+/* تفعيل ظهور البارات عند التمرير */
+@keyframes slideInBar {
+  0% { width: 0; }
+  100% { width: var(--bar-width); }
+}
+
+.bars-box.animate .percent-bar {
+  animation: slideInBar 2s ease forwards;
+}
+
+/* جعل الكروت وزر التحميل في منتصف الصفحة */
+#portfolio .services-content,
+#portfolio .btn,
+#portfolio .load-more {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* تحسين التوافق مع الشاشات الصغيرة */
+@media (max-width: 768px) {
+  #portfolio .services-box {
+    width: 90%;
+    margin: auto;
+  }
+
+  #portfolio .btn,
+  #portfolio .load-more {
+    width: auto;
+    display: block;
+    margin: 20px auto;
+  }
+}
+
 
